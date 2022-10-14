@@ -1,0 +1,49 @@
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%)
+}
+.level-center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0)
+}
+.vertical-level-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+.vertical-center-flex {
+  display: flex;
+  align-items: center;
+}
+.level-center-flex {
+  display: flex;
+  justify-content: center;
+}
+.vertical-level-center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overflow-ellipsis(@n){
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp:@n;
+}
+.overflow-ellipsis {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.overflow-ellipsis-2 {
+ .overflow-ellipsis(2);
+}
+.overflow-ellipsis-3 {
+  .overflow-ellipsis(3);
+}
+
+@theme-color: rgb(26, 60, 211);
+@primary-color: blue;
